@@ -33,9 +33,9 @@ jobs:
         uses: blackducksoftware/github-action@2.0.1
         with:
           args: |
-           '--blackduck.url="${{ secrets.BLACKDUCK_URL}}"  \
-           --detect.project.name="${{ secrets.BLACKDUCK_PROJECT_NAME }}" \
-           --blackduck.api.token="${{ secrets.BLACKDUCK_API_TOKEN }}" \
+           '--blackduck.url="${{https://bdscan.daimler.com}}"  \
+           --detect.project.name="${{kannadt_training01 }}" \
+           --blackduck.api.token="${{ZDRhMzUwZjEtNWI3Yy00NDFhLWFjNTItNTY2M2E2NWQyYjYyOjcxZTU4ZDJiLTBiMzItNGM3YS05YmViLTllZDcyMjUzNzNjNQ==}}" \
            --detect.excluded.detector.types=GIT \
            --detect.project.version.name="1.3-beta" \
            --detect.blackduck.signature.scanner.exclusion.name.pattern=.git,node_modules \
