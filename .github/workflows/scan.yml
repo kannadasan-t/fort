@@ -32,7 +32,7 @@ jobs:
       - name: Synopsys Detect
         uses: blackducksoftware/github-action@2.0.1
         with:
-          args: |
+          args: 
            --blackduck.url="${{https://bdscan.daimler.com}}"  \
            --detect.project.name="${{kannadt_training01}}" \
            --blackduck.api.token="${{ZDRhMzUwZjEtNWI3Yy00NDFhLWFjNTItNTY2M2E2NWQyYjYyOjcxZTU4ZDJiLTBiMzItNGM3YS05YmViLTllZDcyMjUzNzNjNQ==}}" \
